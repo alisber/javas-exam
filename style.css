@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: Source Sans Pro;
+}
+
+.beside{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    left: -300px;
+    transition: .4s;
+}
+
+#sidebar.active{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border: none;
+} 
+
+.look1{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.look2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.look3{
+    background-color: blueviolet;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px 24px;
+    background-color: white;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 330px;
+    left: 330px;   
+    cursor: pointer;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    margin-top: 4px;
+}
+
+.title2{
+    background: black;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 300px;
+    height: 100%;
+    border-radius: 5%;
+    border: 1px solid black;
+    border: none;
+}
+
+.firstrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.secondrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.ab{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ab:hover .abc{
+    top: 0;
+}
+
+.ab .abc{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.ef{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ef:hover .efg{
+    top: 0;
+}
+
+.ef .efg{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.zx{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.zx:hover .zxc{
+    top: 0;
+}
+
+.zx .zxc{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.vb{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.vb:hover .vbn{
+    top: 0;
+}
+
+.vb .vbn{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.as{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.as:hover .asd{
+    top: 0;
+}
+
+.as .asd{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.fg{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.fg:hover .fgh{
+    top: 0;
+}
+
+.fg .fgh{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.jk{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.jk:hover .jkl{
+    top: 0;
+}
+
+.jk .jkl{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.qw{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.qw:hover .qwe{
+    top: 0;
+}
+
+.qw .qwe{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.rt{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.rt:hover .rty{
+    top: 0;
+}
+
+.rt .rty{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.ui{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ui:hover .uio{
+    top: 0;
+}
+
+.ui .uio{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.po{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.po:hover .poi{
+    top: 0;
+}
+
+.po .poi{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.uy{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.uy:hover .uyt{
+    top: 0;
+}
+
+.uy .uyt{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.re{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.re:hover .rew{
+    top: 0;
+}
+
+.re .rew{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.ql{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ql:hover .qlk{
+    top: 0;
+}
+
+.ql .qlk{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.jh{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.jh:hover .jhg{
+    top: 0;
+}
+
+.jh .jhg{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.fd{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.fd:hover .fds{
+    top: 0;
+}
+
+.fd .fds{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.am{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.am:hover .amn{
+    top: 0;
+}
+
+.am .amn{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.bvc{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.vc:hover .bvc{
+    top: 0;
+}
+
+.vc .bvc{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.xz{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.xz:hover .xza{
+    top: 0;
+}
+
+.xz .xza{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.qa{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.qa:hover .qaz{
+    top: 0;
+}
+
+.qa .qaz{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.ws{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ws:hover .wsx{
+    top: 0;
+}
+
+.ws .wsx{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.ed{
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.ed:hover .edc{
+    top: 0;
+}
+
+.ed .edc{
+    width: 95%;
+    height: 100%;
+    background-color: rgba(200, 200,200, 0.6);
+    position: absolute;
+    left: 10;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 5%;
+}
+
+.thirdrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.fourthrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.fivethrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.sixthrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.seventhrow{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.myfood{
+    display: flex;
+    margin-top: 50px;
+}
